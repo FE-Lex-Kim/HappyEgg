@@ -1,5 +1,13 @@
+import HomeBetterEggIntro from "./_components/homeBetterEggIntro";
+import HomeVideo from "./_components/homeVideo";
+
 const Home: React.FC = () => {
-  return <div className="text-3xl font-bold underline">Hello World</div>;
+  return (
+    <div>
+      <HomeVideo />
+      <HomeBetterEggIntro />
+    </div>
+  );
 };
 
 export default Home;
