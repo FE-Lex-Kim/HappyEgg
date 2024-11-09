@@ -1,6 +1,6 @@
 const HomeBetterEggIntro: React.FC = () => {
   return (
-    <div className="relative translate-y-[-5rem]">
+    <section className="relative translate-y-[-5rem]">
       <img
         src="/images/home-intro-background.png"
         className="absolute -z-10 w-screen h-[51.25rem]"
@@ -17,7 +17,7 @@ const HomeBetterEggIntro: React.FC = () => {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
