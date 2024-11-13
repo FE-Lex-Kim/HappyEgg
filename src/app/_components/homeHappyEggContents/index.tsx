@@ -1,4 +1,4 @@
-import LeftSideContents from "./leftSideContents";
+import LeftSideContents from "./LeftSideContents";
 import RightSideImages from "./RightSideImages";
 
 const HomeHappyEggContents: React.FC = () => {

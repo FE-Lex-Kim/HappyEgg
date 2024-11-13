@@ -1,6 +1,7 @@
-import HomeBetterEggIntro from "./_components/homeBetterEggIntro";
+import HomeBetterEggIntro from "./_components/HomeBetterEggIntro";
+import HomeEggProductSlide from "./_components/homeEggProductSlide";
 import HomeHappyEggContents from "./_components/homeHappyEggContents";
-import HomeVideo from "./_components/homeVideo";
+import HomeVideo from "./_components/HomeVideo";
 
 const Home: React.FC = () => {
   return (
@@ -8,6 +9,7 @@ const Home: React.FC = () => {
       <HomeVideo />
       <HomeBetterEggIntro />
       <HomeHappyEggContents />
+      <HomeEggProductSlide />
     </div>
   );
 };
