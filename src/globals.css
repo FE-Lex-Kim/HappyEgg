@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .slide-mask-image {
+    mask-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiIHZpZXdCb3g9IjAgMCA1NjAgNjgwIiBmaWxsPSJub25lIj4KICA8cGF0aCBmaWxsPSIjZmZmIiBkPSJNNTQ5Ljg3OSA1LjYzNzc4TDIzLjkzMTMgMS4xNDc0NEMyMy45MzEzIDEuMTQ3NDQgLTIyLjUyNTYgMTc5LjY4MiAxNS42Mzc2IDMzMy43MzNDNTMuODAwOCA0ODcuNzgzIDcuMzQzODMgNjY2LjMxOCA3LjM0MzgzIDY2Ni4zMThMNTMzLjA3NyA2NzkuNDI4QzUzMy4wNzcgNjc5LjQyOCA1ODQuNDk5IDQ2Mi4yMDQgNTQxLjQ3OCAzNDIuNTMzQzQ5OC40NTcgMjIyLjg2MyA1NDkuODc5IDUuNjM3NzggNTQ5Ljg3OSA1LjYzNzc4WiIgLz4KPC9zdmc+);
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-composite: exclude;
+  }
+}
+
 @font-face {
   font-family: "Filson Soft";
   src: url("/fonts/filson-soft.woff");
