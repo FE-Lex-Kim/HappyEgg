@@ -36,13 +36,15 @@ const useViewport = () => {
 };
 
 const HomeEggProductSlide: React.FC = () => {
-  const rightButtonEle = useRef<HTMLInputElement>(null);
   const [currentSlideNum, setCurrentSlideNum] = useState(0);
-  const { width, height } = useViewport();
+  const { width } = useViewport();
   const calcSlidePx = `${width / 2 - 2925 - 650 * currentSlideNum}px`;
 
-  const RightButtonClick = () => {
+  const rightButtonClick = () => {
     setCurrentSlideNum(currentSlideNum + 1);
+  };
+  const leftButtonClick = () => {
+    setCurrentSlideNum(currentSlideNum - 1);
   };
 
   useEffect(() => {
@@ -59,13 +61,15 @@ const HomeEggProductSlide: React.FC = () => {
           src="/images/slideBottom.svg"
           className="absolute bottom-[-1px] h-[97px] z-10 w-full"
         />
-        <div className="absolute flex top-32 justify-center items-center z-30 w-[120px] h-[120px] border-[1px] border-solid border-[#fff] rounded-full">
+        <div
+          className="absolute hover:cursor-pointer select-none flex top-32 justify-center items-center z-30 w-[120px] h-[120px] border-[1px] border-solid border-[#fff] rounded-full"
+          onClick={leftButtonClick}
+        >
           <img src="/images/cursor.svg" className="scale-[-1]" />
         </div>
         <div
-          onClick={RightButtonClick}
-          ref={rightButtonEle}
-          className="absolute right-0 top-32 hover:cursor-pointer flex justify-center items-center z-30 w-[120px] h-[120px] border-[1px] border-solid border-[#fff] rounded-full"
+          onClick={rightButtonClick}
+          className="absolute right-0 top-32 select-none hover:cursor-pointer flex justify-center items-center z-30 w-[120px] h-[120px] border-[1px] border-solid border-[#fff] rounded-full"
         >
           <img src="/images/cursor.svg" />
         </div>
